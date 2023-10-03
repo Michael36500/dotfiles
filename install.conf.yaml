@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.config/i3/config: i3
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
