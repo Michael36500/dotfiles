@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -135,3 +136,5 @@ unset __conda_setup
 
 ###########################################
 export PATH="/home/michael/.custom-scripts:$PATH"
+alias nvim=~/Documents/nvim.appimage
+alias arduino=~/Documents/arduino.appimage
