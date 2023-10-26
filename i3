@@ -192,7 +192,7 @@ bar {
 #####################################################################
 bindsym $mod+Return exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox
 exec nitrogen --restore
-exec picom
+exec picom &
 #exec "setxkbmap --layout us, cz"
 #exec "setxkbmap --option 'grp:alt_shift_toggle'"
 #exec "setxkbmap -option 'grp:alt_shift_toggl' -layout us,cz"
@@ -210,8 +210,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
+bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
@@ -221,3 +223,20 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+#bindsym $mod+i exec i3lock -i /home/michael/Documents/dotfiles/wave-dark-lock.png 
+bindsym $mod+i exec bash ~/.config/i3lock.conf
+
+
+exec xmodmap -e "remove lock = Caps_Lock"
+exec xmodmap -e "add control = Control_L"
+
+# scrot & gimp - root
+bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
+# scrot & gimp - select window or rectangle
+bindsym $mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
+
+# grayscale
+bindsym $mod1+u exec "bash /home/michael/.custom-scripts/grayscale"
+
+
