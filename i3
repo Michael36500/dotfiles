@@ -201,12 +201,14 @@ bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout us
 exec "setxkbmap -option caps:escape_shifted_capslock"
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 exec syncthing
-exec xrandr --output HDMI-0 --below DP-0
 exec --no-startup-id /usr/lib/gsd-xsettings
+exec xrandr --output HDMI-0 --below DP-0
+exec xrandr --output HDMI-0 --above DP-0
+exec xrandr --output HDMI-0 --below DP-0
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
@@ -215,12 +217,9 @@ bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen bri
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
-# Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
-
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+#bindsym 164 exec playerctl play
+#bindsym 164 exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
