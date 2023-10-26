@@ -7,14 +7,15 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
-order += "ipv6"
+#order += "ipv6"
 order += "wireless _first_"
-order += "ethernet _first_"
+#order += "ethernet _first_"
 order += "battery all"
-order += "disk /"
+#order += "disk /"
+order += "volume master"
 order += "load"
 order += "memory"
 order += "tztime local"
@@ -24,13 +25,31 @@ wireless _first_ {
         format_down = "W: down"
 }
 
-ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
-}
+#ethernet _first_ {
+#        format_up = "E: %ip (%speed)"
+#        format_down = "E: down"
+#}
 
 battery all {
         format = "%status %percentage %remaining"
+        format_down = ""
+        status_chr = "⚡ CHR"
+        status_bat = "🔋 BAT"
+        status_unk = "? UNK"
+        status_full = "☻ FULL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 20
+}
+
+volume master {
+        format = "%volume vol"
+        format_muted = "muted (%volume)"
+        device = "pulse:1"
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
 disk "/" {
@@ -38,13 +57,13 @@ disk "/" {
 }
 
 load {
-        format = "%1min"
+        format = "%1min load"
 }
 
 memory {
-        format = "%used | %available"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+        format = "%used, %available"
+        #threshold_degraded = "1G"
+        #format_degraded = "MEMORY < %available"
 }
 
 tztime local {
