@@ -200,10 +200,12 @@ bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout cz
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout us 
 exec "setxkbmap -option caps:escape_shifted_capslock"
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
 exec syncthing
-exec --no-startup-id /usr/lib/gsd-xsettings
-exec xrandr --output HDMI-0 --below DP-0
-exec xrandr --output HDMI-0 --above DP-0
+exec /home/michael/Documents/syncthing-linux-amd64-v1.24.0/syncthing
+
+exec /usr/libexec/gsd-xsettings  
+
 exec xrandr --output HDMI-0 --below DP-0
 
 # Pulse Audio controls
