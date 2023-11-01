@@ -228,10 +228,9 @@ bindsym XF86AudioPrev exec playerctl previous
 #bindsym $mod+i exec i3lock -i /home/michael/Documents/dotfiles/wave-dark-lock.png 
 bindsym $mod+i exec bash ~/.config/i3lock.conf
 
-
-exec xmodmap -e "remove lock = Caps_Lock"
-exec xmodmap -e "add control = Control_L"
-
+#exec xmodmap -e "remove lock = Caps_Lock"
+#exec xmodmap -e "add control = Control_L"
+execexec  /usr/bin/setxkbmap -option "ctrl:nocaps"
 # scrot & gimp - root
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
 # scrot & gimp - select window or rectangle
