@@ -138,3 +138,4 @@ export PATH="/home/michael/.custom-scripts:$PATH"
 alias arduino=~/Documents/arduino.appimage
 #alias i3lock="i3lock -i /home/michael/Documents/dotfiles/wave-dark-lock.png"
 alias grayscale="bash ~/.custom-scripts/grayscale"
+alias com="git add . && git commit"
