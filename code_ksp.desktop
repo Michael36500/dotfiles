@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KSP
+Comment=Launches VSCode in KSP directory
+Exec=code /home/michael/Documents/GitHub/KSP-MFF-CUNI
+

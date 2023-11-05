@@ -9,6 +9,10 @@
     ~/.config/i3/config: i3
     /etc/i3status.conf: i3status
     ~/.config/i3lock.conf: i3lock.conf
+    ~/.local/share/applications/code_schools.desktop: code_schools.desktop
+    ~/.local/share/applications/code_esp32.desktop: code_esp32.desktop
+    ~/.local/share/applications/code_immag-box.desktop: code_immag-box.desktop
+    ~/.local/share/applications/code_ksp.desktop: code_ksp.desktop
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

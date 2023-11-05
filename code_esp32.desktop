@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=esp32
+Comment=Launches VSCode in KSP directory
+Exec=code /home/michael/Documents/GitHub/esp32
+

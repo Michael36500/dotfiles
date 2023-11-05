@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Schools
+Comment=Launches VSCode in Schools directory
+Exec=code /home/michael/Documents/GitHub/Schools
+
