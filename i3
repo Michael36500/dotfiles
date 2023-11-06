@@ -230,7 +230,7 @@ bindsym $mod+i exec bash ~/.config/i3lock.conf
 
 #exec xmodmap -e "remove lock = Caps_Lock"
 #exec xmodmap -e "add control = Control_L"
-execexec  /usr/bin/setxkbmap -option "ctrl:nocaps"
+exec  /usr/bin/setxkbmap -option "ctrl:nocaps"
 # scrot & gimp - root
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
 # scrot & gimp - select window or rectangle
