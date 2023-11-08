@@ -13,6 +13,7 @@
     ~/.local/share/applications/code_esp32.desktop: code_esp32.desktop
     ~/.local/share/applications/code_immag-box.desktop: code_immag-box.desktop
     ~/.local/share/applications/code_ksp.desktop: code_ksp.desktop
+    ~/.custom-scripts/slovicka: slovicka
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
