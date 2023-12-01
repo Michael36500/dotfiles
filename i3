@@ -190,7 +190,8 @@ bar {
 
 
 #####################################################################
-bindsym $mod+Return exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox
+#bindsym $mod+Return exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox
+bindsym $mod+Return exec alacritty
 exec nitrogen --restore
 exec picom &
 #exec "setxkbmap --layout us, cz"
@@ -207,6 +208,7 @@ exec /home/michael/Documents/syncthing-linux-amd64-v1.24.0/syncthing
 exec /usr/libexec/gsd-xsettings  
 
 exec xrandr --output HDMI-0 --below DP-0
+exec xrandr --output HDMI-0 --pos 0x840
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
@@ -228,8 +230,8 @@ bindsym XF86AudioPrev exec playerctl previous
 #bindsym $mod+i exec i3lock -i /home/michael/Documents/dotfiles/wave-dark-lock.png 
 bindsym $mod+i exec bash ~/.config/i3lock.conf
 
-#exec xmodmap -e "remove lock = Caps_Lock"
-#exec xmodmap -e "add control = Control_L"
+exec xmodmap -e "remove lock = Caps_Lock"
+exec xmodmap -e "add control = Control_L"
 exec  /usr/bin/setxkbmap -option "ctrl:nocaps"
 # scrot & gimp - root
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'

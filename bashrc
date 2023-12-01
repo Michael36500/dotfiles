@@ -139,3 +139,8 @@ alias arduino=~/Documents/arduino.appimage
 #alias i3lock="i3lock -i /home/michael/Documents/dotfiles/wave-dark-lock.png"
 alias grayscale="bash ~/.custom-scripts/grayscale"
 alias com="git add . && git commit"
+alias gpu_tf="tensorman run --gpu --jupyter --python3 -p 127.0.0.1:8888:8888 bash"
+alias docker=ducker
+source ~/.bash_completion/alacritty
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
