@@ -207,7 +207,8 @@ exec /home/michael/Documents/syncthing-linux-amd64-v1.24.0/syncthing
 
 exec /usr/libexec/gsd-xsettings  
 
-exec xrandr --output HDMI-0 --below DP-0
+exec xrandr --output HDMI-0 --left-of DP-0
+exec xrandr --output DP-0 --rotate left
 exec xrandr --output HDMI-0 --pos 0x840
 
 # Pulse Audio controls

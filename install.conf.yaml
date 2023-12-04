@@ -14,7 +14,7 @@
     ~/.local/share/applications/code_immag-box.desktop: code_immag-box.desktop
     ~/.local/share/applications/code_ksp.desktop: code_ksp.desktop
     ~/.custom-scripts/slovicka: slovicka
-    ~/.config/alacritty/alacritty.toml: alacritty.toml
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
 
 
 - shell:
