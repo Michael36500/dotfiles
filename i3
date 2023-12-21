@@ -193,7 +193,7 @@ bar {
 #bindsym $mod+Return exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox
 bindsym $mod+Return exec alacritty
 exec nitrogen --restore
-exec picom &
+# exec picom &
 #exec "setxkbmap --layout us, cz"
 #exec "setxkbmap --option 'grp:alt_shift_toggle'"
 #exec "setxkbmap -option 'grp:alt_shift_toggl' -layout us,cz"
