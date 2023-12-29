@@ -16,6 +16,13 @@
     ~/.custom-scripts/slovicka: slovicka
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/alacritty/themes/themes/nord_extra_dark.yaml: nord_extra_dark.yaml
+    ~/.custom-scripts/slovicka: slovicka
+    ~/.custom-scripts/usa: usa
+    ~/.custom-scripts/czech: czech
+    ~/.custom-scripts/krusader-dark: krusader-dark
+    ~/.custom-scripts/fix-bluetooth: fix-bluetooth
+    ~/.custom-scripts/caps2ctrl: caps2ctrl
+    
 
 
 - shell:
