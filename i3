@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $mod1 Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -92,8 +93,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+x layout stacking
+bindsym $mod+s layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -242,4 +243,6 @@ bindsym $mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
 # grayscale
 bindsym $mod1+u exec "bash /home/michael/.custom-scripts/grayscale"
 
-
+# tabbing through workspaces
+bindsym $mod1+w exec i3 workspace next
+bindsym $mod1+q exec i3 workspace prev
