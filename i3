@@ -246,3 +246,7 @@ bindsym $mod1+u exec "bash /home/michael/.custom-scripts/grayscale"
 # tabbing through workspaces
 bindsym $mod1+w exec i3 workspace next
 bindsym $mod1+q exec i3 workspace prev
+
+# scrolling through windows
+bindsym --whole-window $mod+button4 focus up
+bindsym --whole-window $mod+button5 focus down
