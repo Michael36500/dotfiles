@@ -254,3 +254,7 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
 
 # start with stacked layout
 workspace_layout stacking
+
+# scrolling through windows
+bindsym --whole-window $mod+button4 focus up
+bindsym --whole-window $mod+button5 focus down
