@@ -246,3 +246,11 @@ bindsym $mod1+u exec "bash /home/michael/.custom-scripts/grayscale"
 # tabbing through workspaces
 bindsym $mod1+w exec i3 workspace next
 bindsym $mod1+q exec i3 workspace prev
+
+# autostart
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/code'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
+
+# start with stacked layout
+workspace_layout stacking
