@@ -64,6 +64,7 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+uring focus right
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -195,7 +196,7 @@ bar {
 bindsym $mod+Return exec alacritty
 exec nitrogen --restore
 # exec picom &
-#exec "setxkbmap --layout us, cz"
+#exec "setxkbmap --layout us, cz
 #exec "setxkbmap --option 'grp:alt_shift_toggle'"
 #exec "setxkbmap -option 'grp:alt_shift_toggl' -layout us,cz"
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout cz 
