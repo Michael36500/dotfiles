@@ -13,6 +13,8 @@
     ~/.local/share/applications/code_esp32.desktop: code_esp32.desktop
     ~/.local/share/applications/code_immag-box.desktop: code_immag-box.desktop
     ~/.local/share/applications/code_ksp.desktop: code_ksp.desktop
+    ~/.local/share/applications/code_plotr.desktop: code_plotr.desktop
+    ~/.local/share/applications/code_fll.desktop: code_fll.desktop
     ~/.custom-scripts/slovicka: slovicka
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/alacritty/themes/themes/nord_extra_dark.yaml: nord_extra_dark.yaml

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=plotr
+Comment=Launches VSCode in KSP directory
+Exec=code /home/michael/Documents/GitHub/plotr
+
