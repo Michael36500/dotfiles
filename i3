@@ -249,9 +249,10 @@ bindsym $mod1+w exec i3 workspace next
 bindsym $mod1+q exec i3 workspace prev
 
 # autostart
+# není ideální, dá se líp (i3-save-tree
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/code'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/thunderbird'
+exec --no-startup-id i3-msg 'sleep 2; workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'sleep 2; workspace 2; exec /usr/bin/thunderbird'
 
 # start with stacked layout
 workspace_layout stacking
