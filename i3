@@ -248,11 +248,15 @@ bindsym $mod1+u exec "bash /home/michael/.custom-scripts/grayscale"
 bindsym $mod1+w exec i3 workspace next
 bindsym $mod1+q exec i3 workspace prev
 
-# autostart
-# není ideální, dá se líp (i3-save-tree
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/code'
-exec --no-startup-id i3-msg 'sleep 2; workspace 2; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'sleep 2; workspace 2; exec /usr/bin/thunderbird'
+# workspace magic
+set $monitor_left HDMI-0
+set $monitor_right DP-0
+workspace $ws1 output $monitor_right
+workspace $ws2 output $monitor_left
+workspace $ws3 output $monitor_right
+workspace $ws4 output $monitor_left
+workspace $ws5 output $monitor_right
+workspace $ws6 output $monitor_left
 
 # start with stacked layout
 workspace_layout stacking
@@ -260,3 +264,13 @@ workspace_layout stacking
 # scrolling through windows
 bindsym --whole-window $mod+button4 focus up
 bindsym --whole-window $mod+button5 focus down
+
+
+# autostart
+exec bash ~/.custom-scripts/displays
+exec bash ~/.custom-scripts/caps2ctrl
+# programs
+exec --no-startup-id i3-msg 'workspace 1; exec code'
+exec --no-startup-id i3-msg 'sleep 1s; workspace 2; exec firefox'
+exec --no-startup-id i3-msg 'sleep 1s; workspace 2; exec thunderbird'
+
