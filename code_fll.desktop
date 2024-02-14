@@ -3,5 +3,5 @@ Version=1.0
 Type=Application
 Name=fll
 Comment=Launches VSCode in FLL directory
-Exec=code /home/michael/Documents/GitHub/FLL-Functioning_Largely_on_Luck/
+Exec=code /home/michael/Documents/GitHub/fll-functioning_largely_on_luck/
 
