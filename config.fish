@@ -3,3 +3,7 @@ if status is-interactive
 end
 
 thefuck --alias | source
+
+# aliasy
+alias nvim ~/Documents/nvim.appimage
+alias arduino ~/Documents/Arduijo.appimage

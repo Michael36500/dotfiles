@@ -195,13 +195,13 @@ bar {
 #bindsym $mod+Return exec /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=blackbox com.raggesilver.BlackBox
 bindsym $mod+Return exec alacritty
 exec nitrogen --restore
-# exec picom &
+exec picom &
 #exec "setxkbmap --layout us, cz
 #exec "setxkbmap --option 'grp:alt_shift_toggle'"
 #exec "setxkbmap -option 'grp:alt_shift_toggl' -layout us,cz"
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout cz 
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout us 
-exec "setxkbmap -option caps:escape_shifted_capslock"
+exec sleep 5; "setxkbmap -option caps:ctrl_modifier &
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 exec syncthing
@@ -209,9 +209,9 @@ exec /home/michael/Documents/syncthing-linux-amd64-v1.24.0/syncthing
 
 exec /usr/libexec/gsd-xsettings  
 
-exec xrandr --output HDMI-0 --left-of DP-0
-exec xrandr --output DP-0 --rotate left
-exec xrandr --output HDMI-0 --pos 0x840
+exec sleep 5; xrandr --output HDMI-0 --left-of DP-0
+exec sleep 5; xrandr --output DP-0 --rotate left
+exec sleep 5; xrandr --output HDMI-0 --pos 0x840
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
