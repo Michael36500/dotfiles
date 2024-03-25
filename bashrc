@@ -146,3 +146,4 @@ source ~/.bash_completion/alacritty
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 eval "$(thefuck --alias)"
+

@@ -3,5 +3,5 @@ Version=1.0
 Type=Application
 Name=immag-box
 Comment=Launches VSCode in KSP directory
-Exec=code /home/michael/Documents/GitHub/immag-box-2
+Exec=code /home/michael/Documents/GitHub/immag-box-v2
 
