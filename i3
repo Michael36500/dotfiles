@@ -12,6 +12,7 @@
 set $mod Mod4
 set $mod1 Mod4
 
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
@@ -211,7 +212,7 @@ exec /home/michael/Documents/syncthing-linux-amd64-v1.24.0/syncthing
 exec /usr/libexec/gsd-xsettings  
 
 exec sleep 5; xrandr --output HDMI-0 --left-of DP-0
-# exec sleep 5; xrandr --output DP-0 --rotate left
+exec sleep 5; xrandr --output DP-0 --rotate left
 exec sleep 5; xrandr --output HDMI-0 --pos 0x840
 
 # Pulse Audio controls

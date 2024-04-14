@@ -8,6 +8,7 @@ thefuck --alias | source
 alias nvim ~/Documents/nvim.appimage
 alias arduino ~/Documents/Arduijo.appimage
 alias python python3
+alias slp "sudo pm-suspend"
 
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
