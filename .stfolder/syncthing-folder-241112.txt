@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: awda6-ggahu
+created: 2024-09-01T21:32:22+02:00

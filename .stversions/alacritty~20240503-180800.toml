@@ -1,0 +1,21 @@
+import = ["/home/michael/.config/alacritty/themes/themes/nord_extra_dark.toml"]
+live_config_reload = true
+
+[cursor]
+vi_mode_style = "Beam"
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[scrolling]
+history = 10000
+multiplier = 5
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/fish"
+
+[window]
+dynamic_title = true
+startup_mode = "Maximized"

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Studio
+Comment=Launches Android Studio
+Exec=bash /usr/local/android-studio/bin/studio.sh
+
