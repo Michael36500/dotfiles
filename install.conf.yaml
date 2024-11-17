@@ -26,9 +26,14 @@
     ~/.custom-scripts/krusader-dark: krusader-dark
     ~/.custom-scripts/fix-bluetooth: fix-bluetooth
     ~/.custom-scripts/caps2ctrl: caps2ctrl
+    ~/.custom-scripts/xournal-export: xournal-export
     /home/michael/.config/fish/config.fish: config.fish
     /home/michael/.config/xournalpp/toolbar.ini: toolbar.ini
     ~/.config/zellij/config.kdl: config.kdl
+    ~/.themes/Nordic-darker: Nordic-darker
+    ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/dark.css: pop_tiling_dark.css
+    ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/tiling.js: pop_tiling_tiling.js
+      
     
 
 
